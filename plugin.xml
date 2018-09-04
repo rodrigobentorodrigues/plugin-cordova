@@ -25,8 +25,15 @@
         <param name="android-package" value="com.example.plugin.Hello"/>
       </feature>
     </config-file>
+    <config-file parent="/manifest/application" target="AndroidManifest.xml">
+      <service
+          android:name="com.example.plugin.HelloService"
+          android:exported="false">
+      </service>
+    </config-file>
 
     <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
+    <source-file src="src/android/HelloService.java" target-dir="src/com/example/plugin/"/>
   </platform>
 
 </plugin>
