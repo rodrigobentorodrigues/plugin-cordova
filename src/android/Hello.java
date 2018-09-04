@@ -3,6 +3,11 @@ package com.example.plugin;
 import org.apache.cordova.*;
 import android.app.Activity;
 import android.app.Intent;
+import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Hello extends CordovaPlugin {
 
